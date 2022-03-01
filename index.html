@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Submission Dicoding</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/8a6cb35a1f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Bookshelf Apps</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sectionone">Home</a></li>
+                    <li><a href="#sectiontwo">Record</a></li>
+                    <li><a href="#sectionthree">Search</a></li>
+                    <li><a href="#sectionfour">History</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="one" id="sectionone">
+            <div class="content">
+                <h1>MAKE YOUR DREAM</h1>
+                <p>"A good book should leave you with a lot of experience, and a little fatigue at the end. You live a few lives while reading."<br>- William Styron -</p>
+                <div>
+                    <a href="#sectiontwo"><button type="button" class="mainbtn"><span></span>GET STARTED</button></a>
+                    <a href="#sectionfour"><button type="button" class="mainbtn"><span></span>CHECK HISTORY</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="two" id="sectiontwo">
+            <div class="box image">
+                <h1 id="h2InputSection">Record Your Book..!</h1>
+            </div>
+            <div class="box record">
+                <section class="input_section" id="inputSection">         
+                    <form id="inputBook">
+                      <div class="input" id="sectionTitle">
+                        <label for="inputBookTitle">Title</label>
+                        <input id="inputBookTitle" type="text" />
+                        <small class="error-display" id="errorTitle">*Required</small>
+                      </div>
+                      <div class="input" id="sectionAuthor">
+                        <label for="inputBookAuthor">Author</label>
+                        <input id="inputBookAuthor" type="text" />
+                        <small class="error-display" id="errorAuthor">*Required</small>
+                      </div>
+                      <div class="input" id="sectionYear">
+                        <label for="inputBookYear">Year</label>
+                        <input id="inputBookYear" type="number" />
+                        <small class="error-display" id="errorYear">*Required</small>
+                      </div>
+                      <div class="input" id="sectionDesc">
+                        <label for="inputBookDesc">Description</label>
+                        <input id="inputBookDesc" type="text" />
+                        <small class="error-display" id="errorDesc">*Required</small>
+                      </div>
+                      <div class="input_inline">
+                        <label for="inputBookIsComplete">Finished reading</label>
+                        <input id="inputBookIsComplete" type="checkbox" />
+                      </div>
+                      <button id="bookSubmit" type="button"><span></span>COMPLETED</button>
+                    </form>
+                </section>
+            </div>
+        </section> 
+
+        <section class="three search_section book_shelf" id="sectionthree" >
+            <h2 id="searchSectionH2">Search Your Book</h2>
+            <h3>Write the keyword below</h3>
+            <form id="searchBook">
+              <input id="searchBookTitle" type="text" />
+              <button id="searchSubmit" type="submit">Submit</button>
+            </form>
+            <div id="searchResult" class="book_list" style="width: 100%"></div>
+        </section>
+
+        <section class="four" id="sectionfour">
+            <div class="box-incompleted">
+                <section class="book_shelf" id="bookShelfUncompleted">
+                    <h2 id="uncompletedH2">Not Finished Reading</h2>
+                    <div id="incompleteBookshelfList" class="book_list"></div>
+                </section>
+            </div>
+            <div class="box-completed">
+                <section class="book_shelf" id="bookShelfCompleted">
+                    <h2 id="completedH2">Finished Reading</h2>
+                    <div id="completeBookshelfList" class="book_list"></div>
+                </section>
+            </div>
+            <div class="box-favorite">
+                <section class="book_shelf" id="bookShelfFavorite">
+                    <h2 id="favoriteH2">Favorite Book</h2>
+                    <div id="favoriteBookshelfList" class="book_list"></div>
+                </section>
+            </div>
+        </section>
+        <script src="assets/main.js"></script>
+    </body>
+</html>
