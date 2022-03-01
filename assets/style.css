@@ -404,7 +404,7 @@ label {
     margin: 20px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   #h2InputSection {
     text-align: center;
     color: #ffee10;
