@@ -498,6 +498,7 @@ function unreadedBook(id) {
                 title: bookDataDetail[0].title,
                 author: bookDataDetail[0].author,
                 year: bookDataDetail[0].year,
+                desc: bookDataDetai[0].desc,
                 isCompleted: false,
                 isFavorite: true
             }
@@ -513,6 +514,7 @@ function unreadedBook(id) {
                 title: bookDataDetail[0].title,
                 author: bookDataDetail[0].author,
                 year: bookDataDetail[0].year,
+                desc: bookDataDetai[0].desc,
                 isCompleted: false,
                 isFavorite: false
             }
